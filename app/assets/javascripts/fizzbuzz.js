@@ -5,13 +5,21 @@ var fizz = (num) => {
   return num
 }
 
+var buzz = (num) => {
+  if (isBuzzy(num)) {
+    return "buzz"
+  }
+  return num
+}
+
 var isFizzy = (num) => {
   return num === 3
 }
 
+var isBuzzy = (num) => {
+  return num === 5
+}
+
 exports.execute = (num) => {
-  if (num === 5) {
-    return "buzz"
-  }
-  return fizz(num) + ""
+  return buzz(fizz(num)) + ""
 }
