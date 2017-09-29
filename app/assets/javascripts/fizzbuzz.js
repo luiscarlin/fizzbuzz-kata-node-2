@@ -21,5 +21,7 @@ var isBuzzy = (num) => {
 }
 
 exports.execute = (num) => {
+  if (isFizzy(num) && isBuzzy(num))
+    return "fizzbuzz"
   return buzz(fizz(num)) + ""
 }
