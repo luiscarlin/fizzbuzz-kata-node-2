@@ -14,5 +14,11 @@ describe('fizzbuzz', function() {
         expect(result).toBe("2")
         done()
       })
+    it('should return string fizz when fizzbuzz of 3',
+      function(done) {
+        let result = underTest.execute(3)
+        expect(result).toBe("fizz")
+        done()
+      })
   })
 })
