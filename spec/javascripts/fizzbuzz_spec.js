@@ -2,7 +2,7 @@ var underTest = require('../..')
 
 describe('fizzbuzz', function() {
   describe(' ', function() {
-    it('should return string 1 when fizzbuzz 1',
+    it('should return string 1 when fizzbuzz of 1',
       function(done) {
         let result = underTest.execute(1)
         expect(result).toBe("1")
@@ -14,6 +14,5 @@ describe('fizzbuzz', function() {
         expect(result).toBe("2")
         done()
       })
-
   })
 })
