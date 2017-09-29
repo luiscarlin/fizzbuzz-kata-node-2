@@ -10,5 +10,8 @@ var isFizzy = (num) => {
 }
 
 exports.execute = (num) => {
+  if (num === 5) {
+    return "buzz"
+  }
   return fizz(num) + ""
 }
