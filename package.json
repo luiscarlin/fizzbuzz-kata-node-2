@@ -1,0 +1,24 @@
+{
+  "name": "fizzbuzz-kata-node",
+  "version": "1.0.0",
+  "description": "kata",
+  "main": "app/assets/javascripts/fizzbuzz.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    }
+  },
+  "author": "luis",
+  "license": "ISC",
+  "devDependencies": {
+    "guard": "^0.1.2",
+    "jasmine-node": "^1.14.5"
+  }
+}
