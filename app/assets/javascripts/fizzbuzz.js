@@ -1,7 +1,9 @@
-exports.execute = (num) => {
-
+var fizz = (num) => {
   if (num === 3) {
     return "fizz"
   }
-  return num + ""
+  return num
+}
+exports.execute = (num) => {
+  return fizz(num) + ""
 }
