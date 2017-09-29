@@ -13,7 +13,7 @@ var buzz = (num) => {
 }
 
 var isFizzy = (num) => {
-  return num === 3
+  return num % 3 === 0
 }
 
 var isBuzzy = (num) => {
