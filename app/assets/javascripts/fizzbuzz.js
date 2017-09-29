@@ -1,9 +1,14 @@
 var fizz = (num) => {
-  if (num === 3) {
+  if (isFizzy(num)) {
     return "fizz"
   }
   return num
 }
+
+var isFizzy = (num) => {
+  return num === 3
+}
+
 exports.execute = (num) => {
   return fizz(num) + ""
 }
