@@ -17,7 +17,7 @@ var isFizzy = (num) => {
 }
 
 var isBuzzy = (num) => {
-  return num === 5
+  return num % 5 === 0
 }
 
 exports.execute = (num) => {
